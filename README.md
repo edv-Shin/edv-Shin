@@ -1,16 +1,12 @@
-### Hi there 👋
+## 안녕하세요. 개발자 신동원입니다. 👋
 
-<!--
-**edv-Shin/edv-Shin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Learning currently
 
-Here are some ideas to get you started:
+<div>
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white" />
+</div>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### My Status
+
+<a href="https://github.com/edv-Shin"><img alt="GitHub Status" src="https://github-readme-stats.vercel.app/api?username=edv-Shin&hide=contribs&show_icons=true&include_all_commits=true&count_private=true"/></a>
