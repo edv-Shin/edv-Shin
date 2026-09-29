@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F52FF,100:3DDC84&height=190&section=header&text=Dongwon%20Shin&fontColor=ffffff&fontSize=46&fontAlignY=36&desc=Android%20Developer%20%C2%B7%20Kotlin%20%26%20Jetpack%20Compose&descAlignY=58&descSize=18&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F52FF,100:3DDC84&height=190&section=header&text=Dongwon%20Shin&fontColor=ffffff&fontSize=46&fontAlignY=36&desc=Android%20Developer%20%C2%B7%20Kotlin%20%C2%B7%20Jetpack%20Compose&descAlignY=58&descSize=18&animation=fadeIn" />
 
 <a href="mailto:edvedv613@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white" /></a>
 <a href="https://github.com/edv-Shin?tab=repositories"><img src="https://img.shields.io/badge/Repositories-181717?style=flat-square&logo=GitHub&logoColor=white" /></a>
