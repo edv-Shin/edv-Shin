@@ -61,8 +61,6 @@
 | :--- | :--- | :--- |
 | [**운다방**](https://github.com/projects200/android) | 운동 기록부터 타이머, 매칭, 피드까지 담은 운동 습관 앱 | `Compose` `멀티모듈` `Clean Architecture` `CI/CD` |
 | [**나모**](https://github.com/Namo-log/Android) | 나의 모임 기록 — 일정과 모임을 한 곳에서 관리하는 앱 | `Kotlin` `MVVM` `Room` `Clean Architecture` |
-| [**Say Better**](https://github.com/Say-Better/Android-Educator-APP) | 뇌병변 장애 아동의 비대면 언어치료를 돕는 교육자용 앱 | `Compose` `WebRTC` |
-| [**가람개비**](https://github.com/LGYPJ/Android) | 커뮤니티 기반 네트워킹 안드로이드 앱 | `Kotlin` `MVVM` `FCM` `Stomp` |
 
 > 📁 더 많은 작업은 [Repositories](https://github.com/edv-Shin?tab=repositories)와 소속 조직에서 볼 수 있어요.
 
