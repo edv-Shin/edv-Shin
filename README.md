@@ -27,7 +27,6 @@
   * Fragment 내 Compose 호스팅으로 **7개 기능 모듈 중 6개 · 21개 화면** 점진 전환, 공통 컴포넌트 9종을 디자인 시스템으로 추출
   * GitHub Actions로 PR 자동 테스트와 Firebase / Play Store 배포를 자동화해 **배포 30분 → 5분 이내**
   * 지도 뷰포트 30% 이동 임계값 기반 조건부 호출로 카메라 이벤트마다 발생하던 중복 API 요청 제거
-* **사용한 기술:** Kotlin, Jetpack Compose, Material 3, Multi-Module, Clean Architecture, Hilt, Coroutines, Flow, Retrofit2, OkHttp3, Moshi, WebSocket, Room, DataStore, WorkManager, Firebase (Crashlytics, Performance, Remote Config, FCM), JUnit, MockK, Turbine, Robolectric, JaCoCo, ktlint, GitHub Actions
 
 ### **Project: [나모](https://github.com/Namo-log/Android) (모임 일정 · 공유 일기 서비스)**
 
@@ -39,7 +38,6 @@
   * View와 Controller를 동시에 수행하던 Activity/Fragment에서 비즈니스 로직을 ViewModel로 분리하고 UI/Domain/Data 레이어를 설계해 **주요 화면 View 코드 평균 40% 감소**
   * 라이브러리로는 불가능했던 장기 일정 연속 바, 주 경계 분할, 겹침 정렬을 **Canvas 커스텀 캘린더**로 직접 구현하고 개인/모임 두 캘린더에 드로잉 로직 재사용
   * 중첩 콜백을 suspend 함수로 전환하고 Data Source 레이어로 대체해 에러 추적 경로를 하나로 통일
-* **사용한 기술:** Kotlin, XML, MVVM, Hilt, Coroutines, Retrofit2, OkHttp3, Gson, Room, DataStore, Paging3, Custom View (Canvas), Firebase Remote Config, Glide
 
 > 📁 더 많은 작업은 [Repositories](https://github.com/edv-Shin?tab=repositories)와 소속 조직에서 볼 수 있어요.
 
