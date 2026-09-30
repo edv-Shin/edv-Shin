@@ -14,33 +14,35 @@
 
 ## 🚀 주요 경험 (Project Experience)
 
-### 운다방 · 운동 습관 · 파트너 매칭 서비스
+### 운다방
 
-<sub>**2025.04 ~ 진행 중** · 팀 4명 (Android 1, FE 1, BE 2) · **Android 개발 전담**</sub>
 <a href="https://github.com/projects200/android"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white" /></a>
 <a href="https://play.google.com/store/apps/details?id=com.project200.undabang"><img src="https://img.shields.io/badge/Google%20Play-414141?style=flat-square&logo=GooglePlay&logoColor=white" /></a>
 
-운동 기록부터 타이머, 파트너 매칭, 피드까지 한 앱에서 이어지는 운동 습관 서비스
+* **기간:** 2025.04 ~ 진행 중
+* **한 줄 요약:** 운동 기록부터 타이머, 파트너 매칭, 피드까지 한 앱에서 이어지는 운동 습관 서비스
+* **주요 역할:** Android 앱 개발 전담 (팀 4명 · Android 1, FE 1, BE 2)
+* **개발한 기능:**
+  * **운동 기록** - 기록 등록·수정, 장소 검색, 상세 조회, 공유 이미지 편집
+  * **운동 타이머** - 단순 타이머, 라운드 구성형 커스텀 타이머, 타이머 목록 관리
+  * **파트너 매칭** - 지도 기반 회원 탐색(마커 클러스터링·뷰포트 조회), 운동 장소 등록·검색, 매칭 프로필
+  * **실시간 채팅** - 채팅방, 채팅 목록
+  * **피드** - 게시글 작성·목록·상세
+  * **회원** - 소셜 로그인, 약관·권한 동의, 프로필 편집, 선호 운동 설정, 차단·알림 설정
 
-| 문제 | 해결 | 결과 |
-| :--- | :--- | :--- |
-| UI와 비즈니스 로직이 결합돼 단위 테스트가 불가능 | 계층 분리 + 기능 단위 멀티모듈, Gradle로 의존성 방향 강제 | **커버리지 80%**<br/>증분 빌드 3초 |
-| Compose 전면 재작성은 리스크가 큼 | 화면 단위 점진 전환 + 공통 컴포넌트 9종을 디자인 시스템으로 추출 | **21개 화면 전환**<br/>7개 중 6개 모듈 |
-| 수동 Lint·테스트·배포로 QA 피드백 지연 | GitHub Actions로 PR 자동 테스트 + Firebase / Play Store 배포 | **배포 5분 이내**<br/>기존 30분 |
-| 지도 이동 시 카메라 이벤트마다 API 호출 | 마지막 조회 대비 30% 이상 이동했을 때만 재호출 | 중복 요청 제거<br/>광역 조회 차단 |
+### 나모
 
-### 나모 · 모임 일정 · 공유 일기 서비스
-
-<sub>**2024.03 ~ 2025.04** · 팀 9명 (Android 2, iOS 3, BE 2, PM 1, Designer 1) · **Android 파트장**</sub>
 <a href="https://github.com/Namo-log/Android"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white" /></a>
 
-그룹을 만들어 모임 일정을 추가하고 모임 공유 일기를 기록하는 서비스
-
-| 문제 | 해결 | 결과 |
-| :--- | :--- | :--- |
-| View·Controller 겸용으로 화면 코드가 1,000줄까지 비대 | ViewModel 분리 + UI/Domain/Data 레이어 설계 | **코드 40% 감소**<br/>단방향 흐름 |
-| 캘린더 라이브러리가 장기 일정 연속 바·주 경계 분할 미지원 | View를 상속해 Canvas로 직접 렌더링, 주 단위 분할·겹침 정렬 | **드로잉 로직 재사용**<br/>개인·모임 공용 |
-| 중첩 콜백과 파편화된 예외 처리로 흐름 파악 곤란 | 콜백을 suspend 함수로 전환, Data Source 레이어로 대체 | **에러 추적 단일화**<br/>생명주기 자동 정리 |
+* **기간:** 2024.03 ~ 2025.04
+* **한 줄 요약:** 그룹을 만들어 모임 일정을 추가하고 모임 공유 일기를 기록하는 서비스
+* **주요 역할:** Android 파트장 (팀 9명 · Android 2, iOS 3, BE 2, PM 1, Designer 1)
+* **개발한 기능:**
+  * **캘린더** - 개인·모임 월간 캘린더를 Canvas 커스텀 뷰로 구현
+  * **일정** - 개인/모임 일정 등록·수정, 카테고리 관리, 지도에서 장소 선택
+  * **기록** - 개인·모임 공유 일기 작성과 상세, 기록 아카이브
+  * **모임·친구** - 모임 생성과 관리, 친구 초대, 초대 알림
+  * **회원** - 카카오·네이버 소셜 로그인, 온보딩, 프로필 편집
 
 > 📁 더 많은 작업은 [Repositories](https://github.com/edv-Shin?tab=repositories)와 소속 조직에서 볼 수 있어요.
 
