@@ -142,8 +142,8 @@
 ### ✍️ Writing
 
 <!-- BLOG-POST-LIST:START -->
-- [매칭 지도 구현기 (2) 지도 API 호출 최소화](https://edvedv.tistory.com/66)
-- [매칭 지도 구현기 (1) 마커 클러스터링](https://edvedv.tistory.com/65)
+- [매칭 지도 구현기 &lpar;2&rpar; 지도 API 호출 최소화](https://edvedv.tistory.com/66)
+- [매칭 지도 구현기 &lpar;1&rpar; 마커 클러스터링](https://edvedv.tistory.com/65)
 - [Polling에서 WebSocket으로의 전환기](https://edvedv.tistory.com/64)
 - [에러 처리를 하나로 통합하기](https://edvedv.tistory.com/63)
 - [나모의 코루틴 사용](https://edvedv.tistory.com/62)
