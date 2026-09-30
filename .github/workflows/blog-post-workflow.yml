@@ -18,3 +18,7 @@ jobs:
           feed_list: "https://edvedv.tistory.com/rss"
           max_post_count: 5
           commit_message: "chore: 최신 글 갱신"
+          # 티스토리는 Accept: application/rss+xml 을 406 으로 거절한다
+          accept_header: "*/*"
+          # 저장소가 조용할 때 더미 커밋을 남기지 않는다
+          enable_keepalive: false
