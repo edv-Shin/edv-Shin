@@ -12,22 +12,54 @@
 
 ---
 
-### 👋 About Me
+## 👋 About Me
 
 > 당장 잘 돌아가더라도 유지보수하기 어려운 코드는 잦은 사이드 이펙트를 낳고, 결국 서비스의 발전 속도를 저해한다고 생각합니다.
 
-**유지보수하기 좋은 코드**를 고민하는 안드로이드 개발자 신동원입니다. 구조를 바꾼 뒤에는 늘 숫자로 확인합니다.
+**유지보수하기 좋은 코드**를 고민하는 안드로이드 개발자 신동원입니다.
 
-- 🧱 **운다방** - 처음부터 멀티모듈 클린 아키텍처로 설계해 비즈니스 로직 **커버리지 80%**, 전체 빌드 140초 / 증분 평균 3초
-- 🔁 **나모** - View와 Controller가 뒤엉킨 레거시를 MVVM과 레이어 구조로 분리해 주요 화면 **코드 40% 감소**
-- 🎨 Fragment에 Compose를 호스팅하는 방식으로 **21개 화면 점진 전환**, 공통 컴포넌트 9종을 디자인 시스템으로 추출
-- 🚀 GitHub Actions로 Lint·테스트·배포를 자동화해 **배포 30분 → 5분 이내**
-- ✍️ 문제 - 해결 - 결과를 [블로그](https://edvedv.tistory.com)에 기록합니다
-- 🎓 가천대학교 소프트웨어학과 졸업
+- 🧱 구조를 바꾸면 커버리지, 빌드 시간, 코드 라인 수로 결과를 확인합니다.
+- 🎨 전면 재작성 대신 화면 단위로 나눠 위험을 줄이는 점진 전환을 선호합니다.
+- 🚀 Lint·테스트·배포를 GitHub Actions에 올려 품질이 사람이 아니라 시스템으로 유지되게 만듭니다.
+- ✍️ 문제 - 해결 - 결과를 [블로그](https://edvedv.tistory.com)에 기록합니다.
+- 🎓 가천대학교 소프트웨어학과 졸업 (2020.03 ~ 2025.02)
 
 <br/>
 
-### 🛠️ Tech Stack
+## 🚀 주요 경험 (Project Experience)
+
+### **Project: [운다방](https://github.com/projects200/android) (운동 습관 · 파트너 매칭 서비스)**
+
+<a href="https://play.google.com/store/apps/details?id=com.project200.undabang"><img src="https://img.shields.io/badge/Google%20Play-414141?style=flat-square&logo=GooglePlay&logoColor=white" /></a>
+
+* **기간:** 2025.04 ~ 진행 중
+* **한 줄 요약:** 운동 기록부터 타이머, 파트너 매칭, 피드까지 한 앱에서 이어지는 운동 습관 서비스
+* **팀 구성:** 4명 (Android 1, Frontend 1, Backend 2)
+* **주요 역할:** Android 앱 개발 전담
+* **주요 성과:**
+  * 초기부터 Presentation-Domain-Data 계층을 분리하고 기능 단위 멀티모듈로 설계, Gradle로 의존성 방향을 강제해 **비즈니스 로직 커버리지 80%** 확보 (전체 빌드 140초 / 증분 평균 3초)
+  * Fragment 내 Compose 호스팅으로 **7개 기능 모듈 중 6개 · 21개 화면** 점진 전환, 공통 컴포넌트 9종을 디자인 시스템으로 추출
+  * GitHub Actions로 PR 자동 테스트와 Firebase / Play Store 배포를 자동화해 **배포 30분 → 5분 이내**
+  * 지도 뷰포트 30% 이동 임계값 기반 조건부 호출로 카메라 이벤트마다 발생하던 중복 API 요청 제거
+* **사용한 기술:** Kotlin, Jetpack Compose, Material 3, Multi-Module, Clean Architecture, Hilt, Coroutines, Flow, Retrofit2, OkHttp3, Moshi, WebSocket, Room, DataStore, WorkManager, Firebase (Crashlytics, Performance, Remote Config, FCM), JUnit, MockK, Turbine, Robolectric, JaCoCo, ktlint, GitHub Actions
+
+### **Project: [나모](https://github.com/Namo-log/Android) (모임 일정 · 공유 일기 서비스)**
+
+* **기간:** 2024.03 ~ 2025.04
+* **한 줄 요약:** 그룹을 만들어 모임 일정을 추가하고 모임 공유 일기를 기록하는 서비스
+* **팀 구성:** 9명 (Android 2, iOS 3, Backend 2, PM 1, Designer 1)
+* **주요 역할:** Android 파트장, Android 개발
+* **주요 성과:**
+  * View와 Controller를 동시에 수행하던 Activity/Fragment에서 비즈니스 로직을 ViewModel로 분리하고 UI/Domain/Data 레이어를 설계해 **주요 화면 View 코드 평균 40% 감소**
+  * 라이브러리로는 불가능했던 장기 일정 연속 바, 주 경계 분할, 겹침 정렬을 **Canvas 커스텀 캘린더**로 직접 구현하고 개인/모임 두 캘린더에 드로잉 로직 재사용
+  * 중첩 콜백을 suspend 함수로 전환하고 Data Source 레이어로 대체해 에러 추적 경로를 하나로 통일
+* **사용한 기술:** Kotlin, XML, MVVM, Hilt, Coroutines, Retrofit2, OkHttp3, Gson, Room, DataStore, Paging3, Custom View (Canvas), Firebase Remote Config, Glide
+
+> 📁 더 많은 작업은 [Repositories](https://github.com/edv-Shin?tab=repositories)와 소속 조직에서 볼 수 있어요.
+
+<br/>
+
+## 🛠️ 보유 기술 (Skills)
 
 <table>
 <tr>
@@ -41,6 +73,7 @@
 <td><b>UI</b></td>
 <td>
 <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=JetpackCompose&logoColor=white" />
+<img src="https://img.shields.io/badge/Material%203-757575?style=flat-square&logo=MaterialDesign&logoColor=white" />
 <img src="https://img.shields.io/badge/XML-2C2C2C?style=flat-square" />
 </td>
 </tr>
@@ -87,6 +120,7 @@
 <td>
 <img src="https://img.shields.io/badge/JUnit-25A162?style=flat-square&logo=JUnit5&logoColor=white" />
 <img src="https://img.shields.io/badge/MockK-2C2C2C?style=flat-square" />
+<img src="https://img.shields.io/badge/Turbine-2C2C2C?style=flat-square" />
 <img src="https://img.shields.io/badge/Robolectric-2C2C2C?style=flat-square" />
 </td>
 </tr>
@@ -96,6 +130,7 @@
 <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=GitHubActions&logoColor=white" />
 <img src="https://img.shields.io/badge/Firebase-DD2C00?style=flat-square&logo=Firebase&logoColor=white" />
 <img src="https://img.shields.io/badge/ktlint-2C2C2C?style=flat-square" />
+<img src="https://img.shields.io/badge/JaCoCo-2C2C2C?style=flat-square" />
 </td>
 </tr>
 <tr>
@@ -111,35 +146,7 @@
 
 <br/>
 
-### 🚀 Projects
-
-<table>
-<tr>
-<td width="180"><b><a href="https://github.com/projects200/android">운다방</a></b><br/>
-<sub>2026.05 ~ 진행 중 · Android 1 / FE 1 / BE 2</sub><br/>
-<a href="https://play.google.com/store/apps/details?id=com.project200.undabang"><img src="https://img.shields.io/badge/Google%20Play-414141?style=flat-square&logo=GooglePlay&logoColor=white" /></a>
-</td>
-<td>
-운동 기록부터 타이머, 파트너 매칭, 피드까지 담은 운동 습관 앱. 기능 단위 멀티모듈로 나누고 Gradle로 의존성 방향을 강제해 테스트 가능한 구조를 만들었습니다. 지도는 뷰포트 이동 30% 임계값으로 중복 호출을 걷어냈고, 타이머는 Room을 단일 소스로 두고 동기화합니다.<br/>
-<code>Compose</code> <code>Multi-Module</code> <code>Clean Architecture</code> <code>Room</code> <code>CI/CD</code>
-</td>
-</tr>
-<tr>
-<td width="180"><b><a href="https://github.com/Namo-log/Android">나모</a></b><br/>
-<sub>2024.03 ~ 2025.04 · Android 파트장</sub>
-</td>
-<td>
-나의 모임 기록 - 일정과 모임 공유 일기를 한 곳에서 관리하는 앱. 1,000줄까지 비대해진 화면 코드를 ViewModel과 레이어로 갈라냈고, 라이브러리로는 안 되던 장기 일정 연속 바·겹침 정렬을 Canvas로 직접 그렸습니다. 콜백 중첩은 suspend 함수로 걷어냈습니다.<br/>
-<code>Kotlin</code> <code>MVVM</code> <code>Coroutines</code> <code>Custom View</code> <code>Room</code>
-</td>
-</tr>
-</table>
-
-> 📁 더 많은 작업은 [Repositories](https://github.com/edv-Shin?tab=repositories)와 소속 조직에서 볼 수 있어요.
-
-<br/>
-
-### ✍️ Writing
+## ✍️ Writing
 
 <!-- BLOG-POST-LIST:START -->
 - [매칭 지도 구현기 &lpar;2&rpar; 지도 API 호출 최소화](https://edvedv.tistory.com/66)
@@ -151,7 +158,7 @@
 
 <br/>
 
-### 📊 GitHub Stats
+## 📊 GitHub Stats
 
 <div align="center">
 
