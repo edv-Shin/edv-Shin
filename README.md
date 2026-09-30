@@ -14,30 +14,33 @@
 
 ## 🚀 주요 경험 (Project Experience)
 
-### **Project: [운다방](https://github.com/projects200/android) (운동 습관 · 파트너 매칭 서비스)**
+### 운다방 · 운동 습관 · 파트너 매칭 서비스
 
+<sub>**2025.04 ~ 진행 중** · 팀 4명 (Android 1, FE 1, BE 2) · **Android 개발 전담**</sub>
+<a href="https://github.com/projects200/android"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white" /></a>
 <a href="https://play.google.com/store/apps/details?id=com.project200.undabang"><img src="https://img.shields.io/badge/Google%20Play-414141?style=flat-square&logo=GooglePlay&logoColor=white" /></a>
 
-* **기간:** 2025.04 ~ 진행 중
-* **한 줄 요약:** 운동 기록부터 타이머, 파트너 매칭, 피드까지 한 앱에서 이어지는 운동 습관 서비스
-* **팀 구성:** 4명 (Android 1, Frontend 1, Backend 2)
-* **주요 역할:** Android 앱 개발 전담
-* **주요 성과:**
-  * 초기부터 Presentation-Domain-Data 계층을 분리하고 기능 단위 멀티모듈로 설계, Gradle로 의존성 방향을 강제해 **비즈니스 로직 커버리지 80%** 확보 (전체 빌드 140초 / 증분 평균 3초)
-  * Fragment 내 Compose 호스팅으로 **7개 기능 모듈 중 6개 · 21개 화면** 점진 전환, 공통 컴포넌트 9종을 디자인 시스템으로 추출
-  * GitHub Actions로 PR 자동 테스트와 Firebase / Play Store 배포를 자동화해 **배포 30분 → 5분 이내**
-  * 지도 뷰포트 30% 이동 임계값 기반 조건부 호출로 카메라 이벤트마다 발생하던 중복 API 요청 제거
+운동 기록부터 타이머, 파트너 매칭, 피드까지 한 앱에서 이어지는 운동 습관 서비스
 
-### **Project: [나모](https://github.com/Namo-log/Android) (모임 일정 · 공유 일기 서비스)**
+| 문제 | 해결 | 결과 |
+| :--- | :--- | :--- |
+| UI와 비즈니스 로직이 결합돼 단위 테스트가 불가능 | 계층 분리 + 기능 단위 멀티모듈, Gradle로 의존성 방향 강제 | **커버리지 80%**<br/>증분 빌드 3초 |
+| Compose 전면 재작성은 리스크가 큼 | 화면 단위 점진 전환 + 공통 컴포넌트 9종을 디자인 시스템으로 추출 | **21개 화면 전환**<br/>7개 중 6개 모듈 |
+| 수동 Lint·테스트·배포로 QA 피드백 지연 | GitHub Actions로 PR 자동 테스트 + Firebase / Play Store 배포 | **배포 5분 이내**<br/>기존 30분 |
+| 지도 이동 시 카메라 이벤트마다 API 호출 | 마지막 조회 대비 30% 이상 이동했을 때만 재호출 | 중복 요청 제거<br/>광역 조회 차단 |
 
-* **기간:** 2024.03 ~ 2025.04
-* **한 줄 요약:** 그룹을 만들어 모임 일정을 추가하고 모임 공유 일기를 기록하는 서비스
-* **팀 구성:** 9명 (Android 2, iOS 3, Backend 2, PM 1, Designer 1)
-* **주요 역할:** Android 파트장, Android 개발
-* **주요 성과:**
-  * View와 Controller를 동시에 수행하던 Activity/Fragment에서 비즈니스 로직을 ViewModel로 분리하고 UI/Domain/Data 레이어를 설계해 **주요 화면 View 코드 평균 40% 감소**
-  * 라이브러리로는 불가능했던 장기 일정 연속 바, 주 경계 분할, 겹침 정렬을 **Canvas 커스텀 캘린더**로 직접 구현하고 개인/모임 두 캘린더에 드로잉 로직 재사용
-  * 중첩 콜백을 suspend 함수로 전환하고 Data Source 레이어로 대체해 에러 추적 경로를 하나로 통일
+### 나모 · 모임 일정 · 공유 일기 서비스
+
+<sub>**2024.03 ~ 2025.04** · 팀 9명 (Android 2, iOS 3, BE 2, PM 1, Designer 1) · **Android 파트장**</sub>
+<a href="https://github.com/Namo-log/Android"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white" /></a>
+
+그룹을 만들어 모임 일정을 추가하고 모임 공유 일기를 기록하는 서비스
+
+| 문제 | 해결 | 결과 |
+| :--- | :--- | :--- |
+| View·Controller 겸용으로 화면 코드가 1,000줄까지 비대 | ViewModel 분리 + UI/Domain/Data 레이어 설계 | **코드 40% 감소**<br/>단방향 흐름 |
+| 캘린더 라이브러리가 장기 일정 연속 바·주 경계 분할 미지원 | View를 상속해 Canvas로 직접 렌더링, 주 단위 분할·겹침 정렬 | **드로잉 로직 재사용**<br/>개인·모임 공용 |
+| 중첩 콜백과 파편화된 예외 처리로 흐름 파악 곤란 | 콜백을 suspend 함수로 전환, Data Source 레이어로 대체 | **에러 추적 단일화**<br/>생명주기 자동 정리 |
 
 > 📁 더 많은 작업은 [Repositories](https://github.com/edv-Shin?tab=repositories)와 소속 조직에서 볼 수 있어요.
 
